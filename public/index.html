@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>My first form in this year</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Form</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="formulaire">
+        <form action="../php_files/action_page.php" method="post" enctype="multipart/form-data">
+            <div class="input-form">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom">
+            </div>
+
+            <div class="input-form">
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom">
+            </div>
+
+            <div class="input-form">
+                <label for="sexe">Sexe</label>
+                <select name="sexe" id="sexe">
+                    <option value="">Veuillez sélectionner votre sexe</option>
+                    <option value="masculin">Masculin</option>
+                    <option value="feminin">Féminin</option>
+                </select>
+            </div>
+
+            <div class="input-radio">
+                <label for="fraise">Fraise</label>
+                <input type="radio" name="gout" id="fraise" value="fraise" checked>
+                <label for="orange">Orange</label>
+                <input type="radio" name="gout" id="orange" value="orange">
+            </div>
+            <div class="input-radio">
+                <input type="checkbox" name="case" id="case" checked />
+                <label for="case">Ma case à cocher</label>
+            </div>
+            <div class="input-form">
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="input-form">
+                <input type="file" name="monFichier" id="fichier">
+            </div>
+
+            <button type="submit">Enregistrer</button>
+        </form>
+        </div>
+    </section>
+</body>
+
+</html>

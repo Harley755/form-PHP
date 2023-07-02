@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 85%;
+    margin: auto;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 164, 164);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+}
+
+.formulaire {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 164, 164, 0.418);
+}
+
+.formulaire form {
+    width: 60%;
+}
+
+form .input-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+form .input-form label {
+    font-size: 23px;
+}
+
+form .input-form input,
+select {
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 17px;
+}
